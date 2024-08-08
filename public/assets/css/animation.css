@@ -1,0 +1,72 @@
+.shake img
+{
+    animation: shake 0.5s forwards ease-in-out;
+}
+@keyframes shake {
+    0%
+    {
+        transform: rotate(-15deg);
+    }
+    25%
+    {
+        transform: rotate(15deg);
+    }
+    50%
+    {
+        transform: rotate(-15deg);
+    }
+    75%
+    {
+        transform: rotate(15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.playbtn::before, .playbtn::after
+{
+    animation: circle_highlight 2.5s infinite ease-in-out;
+}
+.playbtn::after
+{
+    animation-delay: 250ms !important;
+}
+@keyframes circle_highlight
+{
+    0%
+    {
+        opacity: 0;
+        clip-path: circle(0.0% at 50% 50%);
+    }
+    25%
+    {
+        opacity: 0.13;
+        clip-path: circle(70.7% at 50% 50%);
+    }
+    100%
+    {
+        opacity: 0;
+        clip-path: circle(70.7% at 50% 50%);
+    }
+
+}
+
+.slider_caption *
+{
+    animation: revealSlide 1s forwards ease-in-out;
+}
+@keyframes revealSlide
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

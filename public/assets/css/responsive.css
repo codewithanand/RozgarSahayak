@@ -1,0 +1,171 @@
+/* large screens */
+@media (min-width: 1600px) {}
+
+
+@media (max-width: 1500px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .productRating {
+        padding: 50px 40px;
+    }
+}
+
+
+/* Desktops/Laptops */
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .productRating {
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .ratingHead h2 {
+        font-size: 18px;
+    }
+
+    .formHead {
+        font-size: 15px;
+    }
+
+    .headermsg {
+        font-size: 12px;
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .slider_btn,
+    .u_btn {
+        width: 200px;
+        height: 65px;
+    }
+
+    .collapseNav {
+        width: 50%;
+    }
+
+    #heroSlider {
+        align-items: center;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1024px) {}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .wrapper {
+        padding-top: 0;
+    }
+
+    .tab-50 {
+        width: 50%;
+    }
+
+    .tab-100 {
+        width: 100%;
+    }
+
+    .tab-none {
+        display: none;
+    }
+
+    .carousel-inner {
+        margin-top: 50px;
+    }
+
+    .slider_caption {
+        text-align: center;
+    }
+
+    .playbtn {
+        display: none;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .sm-100 {
+        width: 100%;
+    }
+
+    .sm-none {
+        display: none;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar .logo img {}
+
+    .collapseNav {
+        width: 100%;
+    }
+
+    .sliderIndicators {
+        bottom: -50px;
+        left: 11%;
+
+
+    }
+
+    .mainForm {
+        margin-top: 100px !important;
+    }
+
+    .productRating {
+        padding: 25px 20px;
+    }
+
+    .ratingHead h2 {
+        font-size: 15px;
+    }
+
+    .rangeNumber span {
+        font-size: 13px;
+    }
+
+    .rangeNumber span.active {
+        font-size: 15px;
+    }
+
+    .thumbsingle p {
+        font-size: 10px;
+    }
+
+    .formHead {
+        font-size: 12px;
+    }
+
+    .inputLabel {
+        font-size: 10px;
+    }
+
+    .radio-single input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .radio-single input::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .headermsg {
+        font-size: 10px;
+    }
+
+    .main-heading {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: rgb(0, 128, 128);
+    --secondary-color: rgb(225, 244, 244);
+
+}
+
+body {
+    font-family: "Unbounded";
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 60px 60px;
+}
+
+.logo {
+    height: auto;
+    position: relative;
+    flex: 1;
+}
+
+.logo span {
+    font-size: 70px;
+    color: var(--primary-color);
+    line-height: 0;
+    position: relative;
+    bottom: -15px;
+}
+
+.socialIcons {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+}
+
+.socialIcons i {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 53px;
+    height: 53px;
+    display: grid;
+    place-content: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    transition: 0.1s linear;
+}
+
+.socialIcons .fa-facebook-f {
+    background-color: rgb(0, 94, 222);
+}
+
+.socialIcons .fa-twitter {
+    background-color: rgb(0, 160, 243);
+}
+
+.socialIcons .fa-linkedin-in {
+    background-color: rgb(0, 110, 222);
+}
+
+.socialIcons .fa-youtube {
+    background-color: rgb(226, 11, 5);
+}
+
+.socialIcons i:hover {
+    padding-bottom: 10px;
+}
+
+.collapseNav {
+
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgb(21, 21, 21);
+    transform: translateX(100%);
+    transition: 0.5s;
+    padding: 50px;
+    padding-top: 200px;
+    text-align: center;
+    z-index: 100000000;
+
+
+}
+
+.callcollapse,
+.hidecollapse {
+    border-radius: 50%;
+    background-color: rgb(1, 78, 180);
+    width: 63px;
+    height: 63px;
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hidecollapse {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.collapseNav .socialIcons {
+    justify-content: center;
+    padding-right: 0;
+}
+
+.copyright {
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+    color: rgb(164, 164, 164);
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+}
+
+article {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(164, 164, 164);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0 80px 0;
+}
+
+.productRating {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 79px 0px rgba(0, 0, 0, 0.11);
+    width: 90%;
+    min-height: 300px;
+    padding: 70px 30px;
+    position: relative;
+}
+
+.ratingHead {
+
+    margin-bottom: 40px;
+}
+
+.ratingHead h2 {
+    font-size: 23px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0275d8;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #025aa5;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+#heroSlider {
+    width: 100%;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-content: end;
+
+}
+
+.slider_caption {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+.playbtn {
+    position: relative;
+    position: relative;
+    z-index: 100;
+}
+
+.playbtn i {
+    background-color: rgb(1, 78, 180);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: grid;
+    place-content: center;
+    margin: 15px 0 50px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 100;
+}
+
+.playbtn::before,
+.playbtn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -14px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    clip-path: circle(70.7% at 50% 50%);
+
+}
+
+.sliderVideos {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 99999999999999999999999999999999;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+
+}
+
+.sliderVideos i {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: rgb(225, 244, 244);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sliderVideos iframe {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+
+.headermsg {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.slider_btn,
+.u_btn {
+    border: solid 4px rgb(255, 255, 255);
+    background-color: transparent;
+    width: 252px;
+    height: 95px;
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.slider_btn,
+.u_btn span {
+    position: relative;
+}
+
+.u_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    clip-path: circle(0% at 0 0);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.u_btn:hover {
+    color: rgb(29, 29, 29);
+}
+
+.u_btn:hover::before {
+    opacity: 1;
+    clip-path: circle(141.4% at 0 0);
+}
+
+.mainSlider {
+    position: relative;
+}
+
+.sliderIndicators {
+    position: absolute;
+    bottom: 40%;
+    right: 11%;
+    width: auto;
+    height: auto;
+    display: flex;
+
+}
+
+.sliderIndicators button {
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    color: rgb(23, 23, 23);
+    width: 200px;
+    height: 80px;
+    transition: 0.5s;
+    border: 0;
+    padding: 0;
+}
+
+.sliderIndicators button i {
+    transition: 0.5s;
+}
+
+.sliderIndicators button.next {
+    background-color: rgb(238, 238, 238);
+}
+
+.sliderIndicators button.prev:hover i {
+    transform: translateX(-10px);
+}
+
+.sliderIndicators button:hover i {
+    transform: translateX(10px);
+}
+
+button.btn.btn-primary {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    display: block;
+}
+
+.productRating {
+    border: 5px solid #2b70ef;
+    border-radius: 10px;
+}
+
+input[type="text"],
+select {
+    border: 1px solid #000;
+
+}
+
+.productRating h2 {
+    text-align: center;
+    color: #2b70ef;
+    font-size: 30px;
+}
+
+.main_bg {
+    background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+
+#heroSlider {
+
+    align-content: start;
+}
+
+form#personalForm .row {
+    padding-bottom: 20px;
+}
+
+label {
+    font-size: 15px;
+}
+
+/* .sliderIndicators {
+    bottom: 34%;
+    right: 11%;
+
+} */
